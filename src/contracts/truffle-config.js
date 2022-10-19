@@ -13,9 +13,9 @@ module.exports = {
 	    network_id: "*",
 	    skipDryRun: true
 	  },
-	  ropsten: {
-	    provider: new HDWalletProvider(process.env.DEPLOYMENT_ACCOUNT_KEY, "https://ropsten.infura.io/v3/" + process.env.INFURA_API_KEY),
-	    network_id: 3,
+	  sepolia: {
+	    provider: new HDWalletProvider(process.env.DEPLOYMENT_ACCOUNT_KEY, "https://sepolia.infura.io/v3/" + process.env.INFURA_API_KEY),
+	    network_id: 11155111,
 	    gas: 5000000,
 		gasPrice: 5000000000, // 5 Gwei
 		skipDryRun: true
